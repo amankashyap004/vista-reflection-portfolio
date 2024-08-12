@@ -34,7 +34,7 @@ const Header: React.FC = () => {
   };
   return (
     <header className="flex justify-center items-center w-full backdrop-blur-lg shadow-sm fixed z-50">
-      <div className="relative container px-4 lg:px-10 py-4 lg:py-6 flex justify-between items-center flex-col lg:flex-row">
+      <div className="relative container px-4 lg:px-40 py-4 lg:py-6 flex justify-between items-center flex-col lg:flex-row">
         <div className="flex justify-between items-center w-full">
           <div className="">
             <Link href={"/"} className="flex justify-center items-center gap-2">
