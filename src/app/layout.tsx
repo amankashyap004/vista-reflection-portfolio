@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, Montserrat } from "next/font/google";
 import "./globals.css";
 
 import { ThemeProviders } from "@/utils/ThemeProviders";
@@ -10,6 +10,14 @@ const poppins = Poppins({
   weight: ["200", "300", "400", "500", "600", "700", "800"],
   style: ["normal", "italic"],
   subsets: ["latin"],
+  variable: "--font-poppins",
+});
+
+const montserrat = Montserrat({
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  variable: "--font-montserrat",
 });
 
 export const metadata: Metadata = {
@@ -29,10 +37,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} bg-white dark:bg-black text-black dark:text-white`}
+        className={`${poppins.variable} ${montserrat.variable} font-poppins bg-white dark:bg-black text-black dark:text-white`}
       >
         <ThemeProviders>
           <Header />
+          <div className="pt-16 lg:pt-20"></div>
           {children}
           <Footer />
         </ThemeProviders>

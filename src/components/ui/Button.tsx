@@ -1,8 +1,14 @@
-import React from 'react';
+import React from "react";
 
-const Button: React.FC = () => {
+interface ButtonProps {
+  text: string;
+}
+
+const Button: React.FC<ButtonProps> = ({ text }) => {
   return (
-    <div>Button</div>
+    <button className="bg-[#FD6F00] text-white px-4 py-2 rounded transition-all duration-300 hover:opacity-90 ">
+      {text}
+    </button>
   );
 };
 
