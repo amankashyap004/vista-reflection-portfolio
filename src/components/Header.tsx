@@ -1,8 +1,11 @@
-import React from 'react';
+import React from "react";
+import ThemeSwitch from "./ThemeSwitch";
 
 const Header: React.FC = () => {
   return (
-    <div>Header</div>
+    <div>
+      <ThemeSwitch />
+    </div>
   );
 };
 

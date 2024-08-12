@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+
+import { ThemeProviders } from "@/utils/ThemeProviders";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -26,10 +28,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className}`}>
-        <Header />
-        {children}
-        <Footer />
+      <body
+        className={`${poppins.className} bg-white dark:bg-black text-black dark:text-white`}
+      >
+        <ThemeProviders>
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProviders>
       </body>
     </html>
   );
