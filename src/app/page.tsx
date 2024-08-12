@@ -1,9 +1,10 @@
 import React from "react";
+import HomePage from "@/components/home/HomePage";
 
 export default function Home() {
   return (
     <main>
-      <p>Vista Reflections Portfolio</p>
+      <HomePage />
     </main>
   );
 }
