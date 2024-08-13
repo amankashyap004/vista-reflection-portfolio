@@ -3,7 +3,7 @@ import Button from "../ui/Button";
 
 const Contact: React.FC = () => {
   return (
-    <div className="flex justify-center items-center w-full">
+    <div className="flex justify-center items-center w-full" id="contact">
       <div className="container px-4 lg:px-40 py-2 lg:py-8 flex justify-center items-center w-full">
         <div className="flex flex-col justify-between items-center w-full gap-8">
           <section className="flex justify-center items-center w-full">

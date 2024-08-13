@@ -4,7 +4,7 @@ import ProgressBar from "../ui/ProgressBar";
 
 const About: React.FC = () => {
   return (
-    <div className="flex justify-center items-center w-full">
+    <div className="flex justify-center items-center w-full" id="about">
       <div className="container px-4 lg:px-40 py-2 lg:py-8 flex justify-center items-center w-full">
         <div className="flex flex-col-reverse lg:flex-row justify-between items-center w-full gap-8">
           <section className="flex justify-center items-center w-full lg:w-1/2">

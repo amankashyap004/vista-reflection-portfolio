@@ -55,7 +55,7 @@ const Header: React.FC = () => {
           <div className="lg:hidden flex justify-center items-center gap-2 lg:gap-4">
             <ThemeSwitch />
             <div className="text-3xl" onClick={toggleSideMenu}>
-              {isSideMenu ? <IoMenu /> : <IoClose />}
+              {isSideMenu ? <IoClose /> : <IoMenu />}
             </div>
           </div>
         </div>
