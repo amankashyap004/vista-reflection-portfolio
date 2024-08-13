@@ -9,7 +9,7 @@ import Contact from "./Contact";
 
 const HomePage: React.FC = () => {
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center w-full gap-12 lg:gap-16">
       <HeroSection />
       <About />
       <Services />
